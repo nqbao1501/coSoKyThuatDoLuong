@@ -179,12 +179,12 @@ void modeXuLySoLieu(int mode) {
           } else {
               lcd.noBacklight();
           }
-          toggleLCDFlag = false; // Reset the flag    
+          toggleLCDFlag = false;  
         }
         delay(SAMPLING_INTERVAL);
       }
 
-      // Calculate average of the array
+      //
       float meanTemp = average(a_iTemp, NUM_SAMPLES);
       
       // Arrays to store errors and squared errors
